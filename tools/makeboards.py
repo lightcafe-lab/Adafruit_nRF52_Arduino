@@ -187,6 +187,9 @@ thirdparty_boards_list = [
 
     ["particle_xenon", "particle_xenon", "Particle", "Xenon", "PARTICLE_XENON",
      "0x239A", ["0x8029", "0x0029"]],
+
+    ["modsring_nrf52840", "modsring_nrf52840", "LC-LAB", "ModsRing", "NRF52840_MODSRING",
+     "0x239A", ["0x8029", "0x0029"]],
 ]
 
 for b in thirdparty_boards_list:

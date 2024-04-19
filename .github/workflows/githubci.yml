@@ -13,16 +13,8 @@ jobs:
       fail-fast: false
       matrix:
         arduino-platform:
-        # Alphabetical order
-        - 'cluenrf52840'
-        - 'cplaynrf52840'
-        - 'feather52832'
-        - 'feather52840'
-        - 'feather52840sense'
-        - 'feather_nrf52840_sense_tft'
-        - 'itsybitsy52840'
-        - 'ledglasses_nrf52840'
-    
+        - 'modsring_nrf52840'
+
     steps:
     - name: Setup Python
       uses: actions/setup-python@v4
