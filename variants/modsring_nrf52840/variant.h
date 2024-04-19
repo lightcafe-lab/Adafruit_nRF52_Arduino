@@ -16,8 +16,8 @@
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-#ifndef _VARIANT_FEATHER52840_
-#define _VARIANT_FEATHER52840_
+#ifndef _VARIANT_MODSRING52840_
+#define _VARIANT_MODSRING52840_
 
 /** Master clock frequency */
 #define VARIANT_MCK       (64000000ul)
@@ -39,35 +39,34 @@ extern "C"
 // Number of pins defined in PinDescription array
 #define PINS_COUNT           (34)
 #define NUM_DIGITAL_PINS     (34)
-#define NUM_ANALOG_INPUTS    (6) // A6 is used for battery, A7 is analog reference
+#define NUM_ANALOG_INPUTS    (8) // A6 is used for battery, A7 is analog reference
 #define NUM_ANALOG_OUTPUTS   (0)
 
 // LEDs
-#define PIN_LED1             (3)
-#define PIN_LED2             (4)
-#define PIN_NEOPIXEL         (8)
-#define NEOPIXEL_NUM         1
+#define PIN_LED1             (14)
+#define PIN_LED2             (15)
+#define PIN_NEOPIXEL         (16)
+#define NEOPIXEL_NUM         0
 
 #define LED_BUILTIN          PIN_LED1
 #define LED_CONN             PIN_LED2
 
 #define LED_RED              PIN_LED1
 #define LED_BLUE             PIN_LED2
-
 #define LED_STATE_ON         1         // State when LED is litted
 
 /*
  * Buttons
  */
-#define PIN_BUTTON1          (7)
+#define PIN_BUTTON1          (8)
 
 /*
  * Analog pins
  */
-#define PIN_A0               (14)
-#define PIN_A1               (15)
-#define PIN_A2               (16)
-#define PIN_A3               (17)
+#define PIN_A0               (0)
+#define PIN_A1               (1)
+#define PIN_A2               (2)
+#define PIN_A3               (3)
 #define PIN_A4               (18)
 #define PIN_A5               (19)
 #define PIN_A6               (20)
@@ -86,27 +85,27 @@ static const uint8_t A7  = PIN_A7 ;
 // Other pins
 #define PIN_AREF           PIN_A7
 #define PIN_VBAT           PIN_A6
-#define PIN_NFC1           (33)
-#define PIN_NFC2           (2)
+#define PIN_NFC1           (9)
+#define PIN_NFC2           (10)
 
 static const uint8_t AREF = PIN_AREF;
 
 /*
  * Serial interfaces
  */
-#define PIN_SERIAL1_RX       (1)
-#define PIN_SERIAL1_TX       (0)
+#define PIN_SERIAL1_RX       (7)
+#define PIN_SERIAL1_TX       (6)
 
 /*
  * SPI Interfaces
  */
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO         (24)
-#define PIN_SPI_MOSI         (25)
-#define PIN_SPI_SCK          (26)
+#define PIN_SPI_MISO         (0)
+#define PIN_SPI_MOSI         (1)
+#define PIN_SPI_SCK          (2)
 
-static const uint8_t SS   = (5);
+static const uint8_t SS   = (3);
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
@@ -116,8 +115,8 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
  */
 #define WIRE_INTERFACES_COUNT 1
 
-#define PIN_WIRE_SDA         (22)
-#define PIN_WIRE_SCL         (23)
+#define PIN_WIRE_SDA         (4)
+#define PIN_WIRE_SCL         (5)
 
 // QSPI Pins
 #define PIN_QSPI_SCK         27
