@@ -7,5 +7,5 @@ LIGHTCAFE LAB nRF52シリーズ向けのArduino BSP(Board Support Package)です
 このリポジトリは[Adafruit_nRF52_Arduino](https://github.com/adafruit/Adafruit_nRF52_Arduino)をベースに開発しています
 
 詳細については、こちらの記事をご参照ください<br>
-[ModsRingをつくるには（ソフト編）](https://lab.lightcafe.co.jp/blog/how-to-make-modsring-firmware)
+[[補足] ModsRingをつくるには（ソフト編）](https://lab.lightcafe.co.jp/blog/how-to-make-modsring-firmware-appendix)
 
